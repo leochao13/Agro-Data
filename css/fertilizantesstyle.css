@@ -20,7 +20,7 @@ html{
 
 .container .title{
    font-size: 3.5rem;
-   color:#444;
+   color:#2dfe30;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
@@ -36,14 +36,15 @@ html{
    text-align: center;
    padding:3rem 2rem;
    background: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-   outline: .1rem solid #ccc;
+   box-shadow: 0 .5rem 1rem rgba(57, 156, 255, 0.859);
+   outline: .1rem solid #086AFE;
    outline-offset: -1.5rem;
    cursor: pointer;
+   border-radius: 30px;
 }
 
 .container .products-container .product:hover{
-   outline: .2rem solid #222;
+   outline: .2rem solid #2dfe30;
    outline-offset: 0;
 }
 
@@ -58,11 +59,12 @@ img {
    width: 85%; /* Ocupa todo el ancho de la tarjeta */
    height: 50px; /* Altura fija */
    object-fit: cover; /* Cubre todo el contenedor, recortando */
+   border-radius: 30px;
  }
 .container .products-container .product h3{
    padding:.5rem 0;
    font-size: 2rem;
-   color:#444;
+   color:#000;
 }
 
 .container .products-container .product:hover h3{
@@ -71,7 +73,7 @@ img {
 
 .container .products-container .product .price{
    font-size: 2rem;
-   color:#444;
+   color:#000;
 }
 
 .products-preview{
@@ -93,6 +95,7 @@ img {
    position: relative;
    margin:2rem;
    width: 40rem;
+   border-radius: 30px;
 }
 
 .products-preview .preview.active{
@@ -109,7 +112,7 @@ img {
    position: absolute;
    top:1rem; right:1.5rem;
    cursor: pointer;
-   color:#444;
+   color:#0cfd70;
    font-size: 4rem;
 }
 
@@ -129,7 +132,7 @@ img {
 }
 
 .products-preview .preview .stars i{
-   color:#27ae60;
+   color:#0cfd70;
 }
 
 .products-preview .preview .stars span{
@@ -146,7 +149,7 @@ img {
 .products-preview .preview .price{
    padding:1rem 0;
    font-size: 2.5rem;
-   color:#27ae60;
+   color:#0cfd70;
 }
 
 .products-preview .preview .buttons{
@@ -162,11 +165,13 @@ img {
    font-size: 1.8rem;
    color:#444;
    border:.1rem solid #444;
+   border-radius: 30px;
 }
 
 .products-preview .preview .buttons a.cart{
-   background: #444;
-   color:#fff;
+   background: #086AFE;
+   color: #0cfd70;
+   
 }
 
 .products-preview .preview .buttons a.cart:hover{
@@ -174,8 +179,8 @@ img {
 }
 
 .products-preview .preview .buttons a.buy:hover{
-   background: #444;
-   color:#fff;
+   background: #086AFE;
+   color: #0cfd70;
 }
 
 
