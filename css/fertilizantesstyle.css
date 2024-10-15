@@ -15,11 +15,11 @@ html{
 .container{
    max-width: 1200px;
    margin:0 auto;
-   padding:3rem 2rem;
+  margin-top: 2rem;
 }
 
 .container .title{
-   font-size: 3.5rem;
+   font-size: 2.5rem;
    color:#2dfe30;
    margin-bottom: 3rem;
    text-transform: uppercase;
@@ -49,18 +49,16 @@ html{
 }
 
 .container .products-container .product img{
-   height: 25rem;
+   width: 85%; /* Ocupa todo el ancho de la tarjeta */
+   height: 250px; /* Altura fija */
+   object-fit: cover; /* Cubre todo el contenedor, recortando */
+   border-radius: 30px;
 }
 
 .container .products-container .product:hover img{
    transform: scale(.9);
 }
-img {
-   width: 85%; /* Ocupa todo el ancho de la tarjeta */
-   height: 50px; /* Altura fija */
-   object-fit: cover; /* Cubre todo el contenedor, recortando */
-   border-radius: 30px;
- }
+
 .container .products-container .product h3{
    padding:.5rem 0;
    font-size: 2rem;

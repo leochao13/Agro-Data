@@ -10,7 +10,7 @@
 html,body{
   height: 100%;
   width: 100%;
-  background: #fff;
+  background:#333333;
 }
 
 nav{
@@ -48,7 +48,7 @@ nav ul li a:hover{
   color: #2dfe30;
 }
 nav ul li a.active{
-  color: #2dfe30 ;
+  color: #2dfe30;
 }
 .menu-icon{
   display: none;

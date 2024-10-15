@@ -6,6 +6,7 @@
     <title>PESTICIDAS</title>
     <!--      CSS DEL HOME       -->
     <link rel="stylesheet" href="/css/homeuserstyle.css">
+    <link rel="stylesheet" href="/css/footerstyle.css">
     <link rel="stylesheet" href="/css/fertilizantesstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
     <link rel="icon" href="/icon.png" type="image/x-icon">   
@@ -13,31 +14,7 @@
 </head>
 <body>
     <!--      BARRA DE NAVEGACION   -->
-    <nav>
-        <div class="logo">
-            <img src="/icon.png" class="logo">
-        </div>
-        <!--      ENLACES DE NAVEGACION   -->
-        <ul id="menuList">
-                <li><a href="/components/usuario/home.html" >INICIO</a></li>
-                <li><a href="/components/huerta/cultivos.html" >CULTIVOS</a></li>
-                <li><a href="/components/huerta/fertilizantes.html" >FERTILIZANTES</a></li>
-                <li><a href="/components/huerta/pesticidas.html" class="active">PESTICIDAS</a></li>
-                <li><a href="/components/huerta/plagas.html">PLAGAS</a></li>
-                <li><a href="/components/usuario/calculadoraAgri.html">CALCULADORA AGRICOLA</a></li>
-                <li><a href="/components/usuario/calendario.html">CALENDARIO</a></li>                        
-                <li><a href="/components/usuario/somos.html">QUIENES SOMOS</a></li>
-                <li><a href="/index.html">SALIR</a></li>
-        </ul>
-        <!--    ICONO DEL MENU     -->
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-        </div>
-    </nav>
-
-
-
-
+   <div id="navbar-container"></div>
     <!-- pesticidas -->
              
     <div class="container">
@@ -196,15 +173,24 @@
           <a href="#" class="cart">Preparar</a>
        </div>
     </div>
- 
  </div>
+<br>
+ <footer class="pie-pagina">
+   <div id="footer-container"></div>  
+   </footer>
  
-    <!-- script para salto de ventana -->
-     <script src="/js/fertilizantemain.js"></script>
+ 
+   <!-- script para salto de ventana -->
+ 
+    <script src="/js/fertilizantemain.js"></script>
 
     <!--      SCRIPT DEL HOME     -->
     <script src="/js/homemain.js"></script>
     <!--      SCRIPT PARA ANIMACION DEL MENU    -->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <!-- SCRIPT DE NAVBAR --> 
+    <script src="/components/usuario/nav-bar.js"></script>
+    <!-- SCRIPT DE FOOTER -->
+     <script src="/components/usuario/footer.js"></script>
 </body>
 </html>
