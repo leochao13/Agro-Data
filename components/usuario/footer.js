@@ -15,10 +15,10 @@ const footerHTML = `
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class='bx bxl-facebook-circle'></a>
+                    <a href="#" class='bx bxl-instagram-alt'></a>
+                    <a href="#" class='bx bxl-twitter'> </a>
+                    <a href="#" class='bx bxl-youtube'>  </a>
                 </div>
             </div>
         </div>

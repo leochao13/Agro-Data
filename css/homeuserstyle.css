@@ -40,6 +40,7 @@ nav ul li{
 }
 
 nav ul li a{
+  font-size: 16px;
   text-decoration: none;
   color: #fff;
 }
@@ -50,6 +51,22 @@ nav ul li a:hover{
 nav ul li a.active{
   color: #2dfe30;
 }
+
+nav ul li button{
+display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 30px;
+    border: none;
+    background: none; /* Asegura que no haya fondo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  nav ul li button:hover{
+    text-decoration: none;
+    color: #2dfe30;
+  }
+
 .menu-icon{
   display: none;
 }

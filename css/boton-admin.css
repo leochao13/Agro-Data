@@ -1,0 +1,208 @@
+ /* Estilo del botón */
+ .btn-admin {
+	position: fixed;
+    width: 10%;
+    height: 10%;
+	bottom: 10px;
+	right: 15px;
+	padding: 5px 5px;
+	background-color: rgb(0, 220, 22);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.btn-admin:hover {
+	background-color: #1B396A;
+	color: #fff;
+}
+
+.login-admin{
+    width: 300px;
+	height: 500px;
+	background: white;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login-admin label{
+	color: #1B396A;	
+}
+
+/* Estilos para la ventana emergente */
+.popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; /* Nivel alto para asegurar que esté adelante */
+}
+
+.popup-content {
+	background-color: #fff;
+	padding: 0;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	z-index: 10000; /* Asegura que esté encima del overlay */
+	position: relative; /* Necesario para superposición controlada */
+    display: flex;
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center;    /* Centra verticalmente */
+	flex-direction: column; /* Asegura que todo en .popup-content se organiza en columna */
+}
+
+.popup-content form {
+	display: flex;
+	flex-direction: column;
+	gap: 2%;
+	justify-content: center; /* Centra los elementos verticalmente */
+	align-items: center;    /* Centra los elementos horizontalmente */
+}
+
+.popup-content input, 
+.popup-content button {
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-top: 5px;
+	width: 90%; /* Ajusta el ancho para centrar visualmente */
+	max-width: 300px; /* Opcional: limita el ancho máximo */
+	box-sizing: border-box; /* Asegura que el padding no exceda el ancho */
+}
+
+.popup-content button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.popup-content button:hover {
+	background-color: #1B396A;
+}
+
+/* Estilo del botón de cerrar */
+.close-btn {
+	background-color: #d9534f;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.close-btn:hover {
+	background-color: #c9302c;
+}
+
+/* Responsividad */
+
+/* Smartphones (pantallas pequeñas) */
+@media (max-width: 480px) {
+	/* Botón Administrador */
+	.btn-admin {
+		width: 20%; /* Reducir ancho */
+		height: auto;
+		bottom: 15px;
+		right: 15px;
+		padding: 8px;
+		font-size: 12px; /* Reducir tamaño del texto */
+	}
+
+	/* Login Admin */
+	.login-admin {
+		width: 200px; /* Más pequeño para pantallas pequeñas */
+		height: auto;
+		transform: translateY(0); /* Quitar desplazamiento vertical */
+		margin: 0 auto; /* Centrar */
+		border-radius: 30%; /* Mantener bordes redondeados */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Contenido Emergente */
+	.popup-content {
+		background-color: #fff; /* Mejor apariencia */
+		width: 85%; /* Más pequeño */
+		margin: 0 auto; /* Centrar */
+		height: auto;
+		padding: 15px;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.popup-content input,
+	.popup-content button {
+		font-size: 10px; /* Reducir texto */
+		width: 90%; /* Ajustar a ancho del popup */
+		margin: 5px auto;
+		padding: 8px;
+	}
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 481px) and (max-width: 768px) {
+	/* Botón Administrador */
+	.btn-admin {
+		width: 18%; /* Ajustar ancho */
+		font-size: 14px;
+		bottom: 20px;
+		right: 20px;
+		padding: 10px;
+	}
+
+	/* Login Admin */
+	.login-admin {
+		width: 240px; /* Más pequeño para tablets */
+		height: auto;
+		transform: translateY(0);
+		margin: 0 auto; /* Centrar */
+		border-radius: 40%; /* Mantener bordes redondeados */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Contenido Emergente */
+	.popup-content {
+		background-color: #fff;
+		width: 75%; /* Ajustar proporción */
+		margin: 0 auto;
+		height: auto;
+		padding: 20px;
+		box-shadow: 0px 5px 20px rgb(255, 255, 255);
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.popup-content input,
+	.popup-content button {
+		font-size: 12px; /* Texto ligeramente más grande */
+		width: 85%;
+		margin: 8px auto;
+		padding: 10px;
+	}
+}
